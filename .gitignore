@@ -1,0 +1,18 @@
+/.phpunit.cache
+/node_modules
+# /public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.local
+.env.docker
+.env.production
+client_secret_*.json
+/*.sql
+/Seller-Inventory-App
+/Seller-Inventory-App.zip
+/public/uploads/*
+!/public/uploads/.gitkeep
