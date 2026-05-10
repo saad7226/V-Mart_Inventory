@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="authentication-form-footer">
-                    <p>Didn’t receive the email? Click to <a href="{{ route('resend.login.otp') }}">resend </a></p>
+                    <p>Didnâ€™t receive the email? Click to <a href="{{ route('resend.login.otp') }}">resend </a></p>
                     <p>Back to <a href="{{ route('login') }}">Log in </a></p>
                 </div>
             </form>
@@ -193,3 +193,4 @@
 </body>
 
 </html>
+

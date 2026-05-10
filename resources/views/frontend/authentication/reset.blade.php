@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -93,7 +93,7 @@
             <h1 class="auth-title">
                 V-Mart <span style="font-weight: 300; font-size: 0.8em; color: var(--text-muted); opacity: 0.8;">Inventory</span>
             </h1>
-            <p class="auth-subtitle">Enter the 5-digit code sent to you ✨</p>
+            <p class="auth-subtitle">Enter the 5-digit code sent to you âœ¨</p>
         </div>
 
         <form action="{{ route('password.reset') }}" method="POST">
@@ -131,3 +131,4 @@
 </body>
 
 </html>
+

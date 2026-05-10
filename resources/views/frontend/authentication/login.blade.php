@@ -204,7 +204,7 @@
 
     <div class="auth-card">
         <div class="auth-header">
-            <img src="{{ assetImage(readconfig('site_logo')) }}" alt="{{ readConfig('site_name') }}" class="auth-logo">
+            <img src="{{ readconfig('site_logo') ? assetImage(readconfig('site_logo')) : asset('images/cart-logo.png') }}" alt="{{ readConfig('site_name') ?? 'V-Mart' }}" class="auth-logo" style="max-height:80px; width:auto;">
             <h1 class="auth-title">
                 V-Mart <span style="font-weight: 300; font-size: 0.8em; color: var(--text-muted); opacity: 0.8;">Inventory</span>
             </h1>

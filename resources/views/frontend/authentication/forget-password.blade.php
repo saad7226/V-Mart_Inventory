@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -92,8 +92,8 @@
 
 <body>
     <div class="mesh-bg"></div>
-    <div class="floating-icon" style="top: 15%; left: 10%; animation-delay: 0s;">🔑</div>
-    <div class="floating-icon" style="bottom: 15%; right: 15%; animation-delay: 1.5s;">🔒</div>
+    <div class="floating-icon" style="top: 15%; left: 10%; animation-delay: 0s;">ðŸ”‘</div>
+    <div class="floating-icon" style="bottom: 15%; right: 15%; animation-delay: 1.5s;">ðŸ”’</div>
 
     <div class="auth-card">
         <div class="auth-header">
@@ -103,7 +103,7 @@
             <h1 class="auth-title">
                 V-Mart <span style="font-weight: 300; font-size: 0.8em; color: var(--text-muted); opacity: 0.8;">Inventory</span>
             </h1>
-            <p class="auth-subtitle">No worries, we'll send you reset instructions ✨</p>
+            <p class="auth-subtitle">No worries, we'll send you reset instructions âœ¨</p>
         </div>
 
         <form action="{{ route('forget.password') }}" method="POST">
@@ -124,3 +124,4 @@
 </body>
 
 </html>
+

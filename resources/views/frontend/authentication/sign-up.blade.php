@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,7 +35,7 @@
             padding: 40px 20px;
         }
 
-        /* ── Advanced Mesh Gradient Background ──────────────────────── */
+        /* â”€â”€ Advanced Mesh Gradient Background â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .mesh-bg {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -49,7 +49,7 @@
             filter: blur(10px);
         }
 
-        /* ── Floating Elements ─────────────────────────────────────── */
+        /* â”€â”€ Floating Elements â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .floating-icon {
             position: absolute;
             z-index: -1;
@@ -63,7 +63,7 @@
             50% { transform: translateY(-30px) rotate(15deg); }
         }
 
-        /* ── Glassmorphism Card ────────────────────────────────────── */
+        /* â”€â”€ Glassmorphism Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .auth-card {
             width: 100%;
             max-width: 580px;
@@ -84,7 +84,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* ── Header ────────────────────────────────────────────── */
+        /* â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .auth-header { text-align: center; margin-bottom: 25px; }
         .auth-logo { max-height: 50px; margin-bottom: 15px; transition: transform 0.3s ease; }
         .auth-logo:hover { transform: scale(1.08); }
@@ -108,7 +108,7 @@
         .auth-title { font-size: 32px; font-weight: 800; color: var(--text-main); letter-spacing: -1px; margin-bottom: 8px; }
         .auth-subtitle { color: var(--text-muted); font-size: 15px; font-weight: 500; }
 
-        /* ── Form Layout ────────────────────────────────────────── */
+        /* â”€â”€ Form Layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         .form-group { margin-bottom: 22px; }
         .form-label { display: block; font-size: 13px; font-weight: 700; color: var(--text-main); margin-bottom: 8px; margin-left: 4px; }
@@ -139,13 +139,13 @@
             cursor: pointer; color: var(--text-muted); display: flex; align-items: center;
         }
 
-        /* ── Terms ──────────────────────────────────────────── */
+        /* â”€â”€ Terms â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .terms-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 25px; }
         .terms-row input[type="checkbox"] { accent-color: var(--primary); width: 20px; height: 20px; flex-shrink: 0; cursor: pointer; margin-top: 2px; }
         .terms-row label { font-size: 14px; color: var(--text-muted); font-weight: 600; cursor: pointer; line-height: 1.5; }
         .terms-row a { color: var(--primary); text-decoration: none; font-weight: 800; }
 
-        /* ── Button ────────────────────────────────────────────── */
+        /* â”€â”€ Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .btn-submit {
             width: 100%;
             padding: 18px;
@@ -166,7 +166,7 @@
             filter: brightness(1.05);
         }
 
-        /* ── Social Login ──────────────────────────────────────── */
+        /* â”€â”€ Social Login â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .divider { display: flex; align-items: center; margin: 25px 0; gap: 15px; }
         .divider::before, .divider::after { content: ""; flex: 1; height: 1.5px; background: #e2e8f0; }
         .divider span { font-size: 12px; color: var(--text-muted); font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; }
@@ -183,12 +183,12 @@
             transition: all 0.3s ease;
         }
 
-        /* ── Footer ────────────────────────────────────────────── */
+        /* â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .auth-footer { text-align: center; margin-top: 25px; font-size: 15px; color: var(--text-muted); font-weight: 500; }
         .auth-footer a { color: var(--primary); font-weight: 800; text-decoration: none; margin-left: 5px; }
 
 
-        /* ── Alerts ───────────────────────────────────────────── */
+        /* â”€â”€ Alerts â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .alert { border-radius: 20px; padding: 18px; font-size: 14px; margin-bottom: 25px; border: 1.5px solid transparent; animation: shake 0.5s ease; font-weight: 600; }
         .alert-error { background: #fff1f2; border-color: #fecaca; color: #be123c; }
 
@@ -205,10 +205,10 @@
     <div class="mesh-bg"></div>
 
     <!-- Floating Cute Elements -->
-    <div class="floating-icon" style="top: 10%; left: 8%; animation-delay: 0s;">✨</div>
-    <div class="floating-icon" style="top: 80%; left: 12%; animation-delay: 1s;">🛍️</div>
-    <div class="floating-icon" style="top: 15%; right: 10%; animation-delay: 2s;">📦</div>
-    <div class="floating-icon" style="bottom: 10%; right: 12%; animation-delay: 1.5s;">🚀</div>
+    <div class="floating-icon" style="top: 10%; left: 8%; animation-delay: 0s;">âœ¨</div>
+    <div class="floating-icon" style="top: 80%; left: 12%; animation-delay: 1s;">ðŸ›ï¸</div>
+    <div class="floating-icon" style="top: 15%; right: 10%; animation-delay: 2s;">ðŸ“¦</div>
+    <div class="floating-icon" style="bottom: 10%; right: 12%; animation-delay: 1.5s;">ðŸš€</div>
 
     <div class="auth-card">
         <div class="auth-header">
@@ -222,7 +222,7 @@
             <h1 class="auth-title">
                 V-Mart <span style="font-weight: 300; font-size: 0.8em; color: var(--text-muted); opacity: 0.8;">Inventory</span>
             </h1>
-            <p class="auth-subtitle">Get your advanced inventory & POS instantly ✨</p>
+            <p class="auth-subtitle">Get your advanced inventory & POS instantly âœ¨</p>
         </div>
 
         <!-- Alerts -->
@@ -274,7 +274,7 @@
                 <label for="agree">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
             </div>
 
-            <button type="submit" class="btn-submit">Create My Store ✨</button>
+            <button type="submit" class="btn-submit">Create My Store âœ¨</button>
         </form>
 
         <div class="divider">
@@ -307,3 +307,4 @@
 </body>
 
 </html>
+
