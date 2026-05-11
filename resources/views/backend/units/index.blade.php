@@ -4,14 +4,14 @@
 
 @section('content')
 <div class="card">
-  @can('unit_create')
-  <div class="mt-n5 mb-3 d-flex justify-content-end">
-    <a href="{{ route('backend.admin.units.create') }}" class="btn bg-gradient-primary">
-      <i class="fas fa-plus-circle"></i>
-      Add New
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="card-title font-weight-bold">Unit List</h3>
+    @can('unit_create')
+    <a href="{{ route('backend.admin.units.create') }}" class="btn btn-primary ml-auto">
+      <i class="fas fa-plus-circle mr-1"></i> Add Unit
     </a>
+    @endcan
   </div>
-  @endcan
   <div class="card-body p-2 p-md-4 pt-0">
     <div class="row g-4">
       <div class="col-md-12">
