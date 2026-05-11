@@ -1,6 +1,8 @@
 /.phpunit.cache
 /node_modules
-# /public/build
+# Allow built assets for server deployment
+/public/build/
+!/public/build/manifest.json
 /public/hot
 /public/storage
 /storage/*.key
