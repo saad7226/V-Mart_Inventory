@@ -338,6 +338,7 @@ export default function Purchase() {
                                         autoComplete="off"
                                         fixedHeight
                                         showPopperArrow={true}
+                                        portalId="datepicker-portal"
                                         onChange={(date) => {
                                             if (date) {
                                                 const year = date.getFullYear();
