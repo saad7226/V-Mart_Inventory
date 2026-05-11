@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -143,7 +143,7 @@
 
         <!-- Preloader -->
         <!-- <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ assetImage(readconfig('site_logo')) }}" alt="Logo" height="60"
+            <img class="animation__shake" src="{{ (readconfig('site_logo') ? assetImage(readconfig('site_logo')) : asset('images/cart-logo.png')) }}" alt="Logo" height="60"
                 width="60">
         </div> -->
 
@@ -155,7 +155,7 @@
         <aside class="main-sidebar elevation-4 sidebar-light-primary">
             <!-- Brand Logo -->
             <a href="{{ route('frontend.home') }}" class="brand-link">
-                <img src="{{ assetImage(readconfig('site_logo')) }}" alt="Logo"
+                <img src="{{ (readconfig('site_logo') ? assetImage(readconfig('site_logo')) : asset('images/cart-logo.png')) }}" alt="Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text">
                     <span class="font-weight-bold" style="color: var(--text-main);">V-Mart</span>

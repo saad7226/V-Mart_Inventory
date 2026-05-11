@@ -1,4 +1,4 @@
-@extends('backend.master')
+﻿@extends('backend.master')
 @section('title', 'Invoice_'.$order->id)
 @section('content')
 <div class="card">
@@ -10,7 +10,7 @@
         <div class="col-4">
           <h2 class="page-header">
             @if(readConfig('is_show_logo_invoice'))
-            <img src="{{ assetImage(readconfig('site_logo')) }}" height="40" width="40" alt="Logo"
+            <img src="{{ (readconfig('site_logo') ? assetImage(readconfig('site_logo')) : asset('images/cart-logo.png')) }}" height="40" width="40" alt="Logo"
               class="brand-image img-circle elevation-3" style="opacity: .8">
             @endif
             @if(readConfig('is_show_site_invoice')){{ readConfig('site_name') }} @endif
