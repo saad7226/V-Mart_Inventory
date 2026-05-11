@@ -336,6 +336,8 @@ export default function Purchase() {
                                         selected={date ? new Date(date + 'T00:00:00') : null}
                                         dateFormat="yyyy-MM-dd"
                                         autoComplete="off"
+                                        fixedHeight
+                                        showPopperArrow={true}
                                         onChange={(date) => {
                                             if (date) {
                                                 const year = date.getFullYear();
