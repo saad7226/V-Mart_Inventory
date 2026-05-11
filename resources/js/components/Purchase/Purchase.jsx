@@ -328,20 +328,23 @@ export default function Purchase() {
                                     Purchase Date
                                     <span className="text-danger">*</span>
                                 </label>
-                                <div>
+                                <div className="date-picker-container">
                                     <DatePicker
                                         name="date"
                                         className="form-control"
                                         placeholderText="Enter purchase date"
-                                        selected={date}
+                                        selected={date ? new Date(date + 'T00:00:00') : null}
                                         dateFormat="yyyy-MM-dd"
+                                        autoComplete="off"
                                         onChange={(date) => {
-                                            const formattedDate = date
-                                                ? date
-                                                      .toISOString()
-                                                      .split("T")[0]
-                                                : null;
-                                            setDate(formattedDate);
+                                            if (date) {
+                                                const year = date.getFullYear();
+                                                const month = String(date.getMonth() + 1).padStart(2, '0');
+                                                const day = String(date.getDate()).padStart(2, '0');
+                                                setDate(`${year}-${month}-${day}`);
+                                            } else {
+                                                setDate(null);
+                                            }
                                         }}
                                     />
                                 </div>
