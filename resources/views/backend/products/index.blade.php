@@ -84,6 +84,11 @@
         },
       ]
     });
+
+    // Auto-Sync (Reload table every 10 seconds)
+    setInterval(function() {
+      table.ajax.reload(null, false); // false means keep the current paging
+    }, 10000);
   });
 </script>
 @endpush
