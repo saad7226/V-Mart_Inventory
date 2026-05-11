@@ -8,6 +8,18 @@
     <form action="{{ route('backend.admin.products.import') }}" method="post" class="accountForm"
       enctype="multipart/form-data">
       @csrf
+      @if(session('error'))
+        <div class="alert alert-danger">{{ session('error') }}</div>
+      @endif
+      @if($errors->any())
+        <div class="alert alert-danger">
+          <ul>
+            @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+            @endforeach
+          </ul>
+        </div>
+      @endif
       <div class="card-body">
         <div class="row">
           <div class="mb-3 col-md-6">
@@ -47,4 +59,12 @@
 @endpush
 @push('script')
 <script src="{{ asset('js/image-field.js') }}"></script>
+<script>
+  $(document).ready(function () {
+    $('.custom-file-input').on('change', function() {
+      let fileName = $(this).val().split('\\').pop();
+      $(this).next('.custom-file-label').addClass("selected").html(fileName);
+    });
+  });
+</script>
 @endpush

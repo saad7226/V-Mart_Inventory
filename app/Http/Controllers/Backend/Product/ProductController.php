@@ -190,8 +190,12 @@ class ProductController extends Controller
             return Excel::download(new DemoProductsExport, 'demo_products.xlsx');
         }
         if ($request->isMethod('post') && $request->hasFile('file')) {
-            Excel::import(new ProductsImport, $request->file('file'));
-            return redirect()->back()->with('success', 'Products imported successfully.');
+            try {
+                Excel::import(new ProductsImport, $request->file('file'));
+                return redirect()->route('backend.admin.products.index')->with('success', 'Products imported successfully.');
+            } catch (\Exception $e) {
+                return redirect()->back()->with('error', 'Error during import: ' . $e->getMessage());
+            }
         }
         return view('backend.products.import');
     }

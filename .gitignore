@@ -12,7 +12,9 @@
 .env.production
 client_secret_*.json
 /*.sql
+/*.zip
+/*.xlsx
+/*.xls
 /Seller-Inventory-App
-/Seller-Inventory-App.zip
 /public/uploads/*
 !/public/uploads/.gitkeep
