@@ -364,13 +364,14 @@ export default function Purchase() {
                 </div>
                 <div className="card">
                     <div className="card-body">
-                        <div className="row mb-2">
-                            <div className="input-group col-6">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text">
-                                        <i className="fas fa-search"></i>
-                                    </span>
-                                </div>
+                        <div className="row mb-3">
+                            <div className="col-12 col-md-8">
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text">
+                                            <i className="fas fa-search"></i>
+                                        </span>
+                                    </div>
                                 <input
                                     type="search"
                                     className="form-control form-control-lg"
@@ -380,22 +381,26 @@ export default function Purchase() {
                                     }
                                     placeholder="Enter product barcode/name"
                                 />
-                                <button
-                                    className="btn bg-gradient-primary ml-2"
-                                    onClick={handleSearchAdd}
-                                >
-                                    Add Product
-                                </button>
+                                    <button
+                                        className="btn bg-gradient-primary ml-md-2 mt-2 mt-md-0"
+                                        onClick={handleSearchAdd}
+                                        style={{ whiteSpace: 'nowrap' }}
+                                    >
+                                        Add Product
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         {/* Display search results below the input */}
                         {searchResults.length > 0 && (
                             <div className="row mb-2">
                                 <div
-                                    className="col-6"
+                                    className="col-12 col-md-6"
                                     style={{
                                         maxHeight: "200px",
                                         overflowY: "auto",
+                                        zIndex: 1000,
+                                        position: 'relative'
                                     }}
                                 >
                                     <ul className="list-group">
@@ -418,28 +423,31 @@ export default function Purchase() {
                         )}
                         <div className="row">
                             <div className="col-12">
-                                <table className="table table-sm table-bordered text-center">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Product Name</th>
-                                            <th>Purchase Price</th>
-                                            <th>Current Stock</th>
-                                            <th>Qty</th>
-                                            <th>Sub Total</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
+                                <div className="table-responsive">
+                                    <table className="table table-sm table-bordered text-center" style={{ minWidth: '800px' }}>
+                                        <thead>
+                                            <tr>
+                                                <th style={{ width: '50px' }}>#</th>
+                                                <th>Product Name</th>
+                                                <th style={{ width: '150px' }}>Purchase Price</th>
+                                                <th>Current Stock</th>
+                                                <th style={{ width: '120px' }}>Qty</th>
+                                                <th>Sub Total</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
                                     <tbody>
                                         {products.map((product, index) => (
                                             <tr key={product.id}>
                                                 <td>{index + 1}</td>
                                                 <td>{product.name}</td>
-                                                <td className="d-flex align-items-center justify-content-center">
+                                                <td className="p-2">
                                                     <input
                                                         type="number"
-                                                        min="1"
-                                                        className="form-control w-50"
+                                                        min="0"
+                                                        step="0.01"
+                                                        className="form-control text-center mx-auto"
+                                                        style={{ width: '100px' }}
                                                         value={
                                                             product.purchase_price
                                                         }
@@ -452,11 +460,12 @@ export default function Purchase() {
                                                     />
                                                 </td>
                                                 <td>{product.stock}</td>
-                                                <td className="d-flex align-items-center justify-content-center">
+                                                <td className="p-2">
                                                     <input
                                                         type="number"
                                                         min="1"
-                                                        className="form-control w-50"
+                                                        className="form-control text-center mx-auto"
+                                                        style={{ width: '80px' }}
                                                         value={product.qty}
                                                         onChange={(e) =>
                                                             handleQtyChange(
@@ -486,12 +495,12 @@ export default function Purchase() {
                                             </tr>
                                         ))}
                                     </tbody>
-                                </table>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-6"></div>
-                            <div className="col-6">
+                        <div className="row justify-content-end">
+                            <div className="col-12 col-md-5">
                                 <div className="table-responsive">
                                     <table className="table table-sm">
                                         <tbody>
